@@ -68,5 +68,5 @@ Es un editor de código optimizado con soporte para operaciones de desarrollo co
 
 ### **Tecnologias a aprender:**
 
-Me gustaria aprender sobre la administracion de base de datos, y tambien sobre ka creacion y desarrollo de paginas web, pues me gustaria explotar la creatividad.
+Me gustaria aprender sobre la administracion de base de datos, y tambien sobre la creacion y desarrollo de paginas web, pues me gustaria explotar la creatividad.
 
