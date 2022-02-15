@@ -54,7 +54,7 @@ Para establecer el ancho, el estilo o el color de todos los lados, usa lo siguie
 - border-left-color
 
 ### **Relleno** 
-El relleno se encuentra entre el borde y el área de contenido. A diferencia de los márgenes, el relleno no puede tomar valores negativos, por lo que el valor debe ser 0 o positivo. Cualquier fondo aplicado a tu elemento se mostrará detrás del área de relleno y, generalmente, se usa para mantener el contenido alejado del borde.
+El relleno se encuentra entre el borde y el área de contenido. A diferencia de los márgenes el relleno no puede tomar valores negativos, por lo que el valor debe ser 0 o positivo. Cualquier fondo aplicado a tu elemento se mostrará detrás del área de relleno y, generalmente, se usa para mantener el contenido alejado del borde.
 
 Podemos controlar el área de relleno para todos los lados de un mismo elemento usando la propiedad padding, o para cada lado uno de los lados usando las propiedades equivalentes:
 
