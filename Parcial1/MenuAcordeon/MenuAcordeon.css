@@ -1,0 +1,44 @@
+ 
+body {
+    background:#f3e0e0;
+  }
+  .Caja {
+    background-color: rgb(195, 155, 211);
+    cursor: pointer;
+    padding: 18px;
+    width: 50%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 23px;
+    transition: 0.4s;
+    font-family: monospace;
+  }
+      
+  .Caja .Caja2 {
+    border: 2px solid rgb(228, 95, 80);
+    color: rgb(5, 5, 5);
+  }
+  .Caja .Titulos {
+    margin: 0;
+    padding: 10px;
+    background-color: rgb(26, 188, 156);
+  }
+  .Caja3{
+      height: 0;
+      overflow: hidden;
+      background-color: rgb(39, 174, 96);
+      margin: 0;
+      padding-left: 10px;
+      transition: 0.5s;
+  }
+  ul{
+      list-style: none;
+  }
+  ul li{
+      padding-top: 5px;
+     
+  }
+  .Caja:hover .Caja2:hover .Caja3 {
+      height: 100px;
+  }
