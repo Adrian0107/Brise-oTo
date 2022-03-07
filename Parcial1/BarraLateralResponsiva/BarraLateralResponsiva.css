@@ -1,0 +1,178 @@
+*{
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  text-decoration: none;
+
+
+}
+body {
+  font-family: 'Roboto', sans-serif;
+  font-size:20px;
+  align-self: center;
+}
+.sidebar {
+  position: fixed;
+  left: -250px;
+  width: 250px;
+  height: 100%;
+  background: #4f0525;
+  transition: all .5s ease;
+}
+.sidebar header {
+  font-size: 22px;
+  color: white;
+  line-height: 70px;
+  text-align: center;
+  background: #101326;
+  user-select: none;
+}
+.sidebar a{
+  display: block;
+  height: 100%;
+  width: 100%;
+  line-height: 65px;
+  font-size: 20px;
+  color: white;
+  padding-left: 40px;
+  box-sizing: border-box;
+  border-bottom: 1px solid black;
+  border-top: 1px solid rgba(255,255,255,.1);
+  transition: .4s;
+}
+div:hover a{
+  padding-left: 50px;
+}
+.sidebar ul a i{
+  margin-right: 16px;
+}
+#check{
+  display: none;
+}
+label #btn,label #cancel{
+  position: absolute;
+  background: #101326;
+  border-radius: 3px;
+  cursor: pointer;
+}
+label #btn{
+  left: 40px;
+  top: 25px;
+  font-size: 35px;
+  color: white;
+  padding: 6px 12px;
+  transition: all .5s;
+}
+label #cancel{
+    z-index: 1111;
+    left: -195px;
+    top: 17px;
+    font-size: 30px;
+    color: white;
+    padding: 4px 9px;
+    transition: all .5s ease;
+  }
+#check:checked ~ .sidebar{
+  left: 0;
+}
+#check:checked ~ label #btn{
+  left: 250px;
+  opacity: 0;
+  pointer-events: none;
+}
+#check:checked ~ label #cancel{
+  left: 195px;
+}
+#check:checked ~ section{
+  margin-left: 250px;
+}
+section{
+  background: url(https://images7.alphacoders.com/115/1158838.jpg) no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+  transition: all .5s;
+
+}
+
+@media screen and (min-width:500px) and (max-width:1023px)
+{
+
+    .cajas{
+        float: left;
+        border: 1px solid #101326;
+        background-color: #101326;
+        margin: 10px;
+        width: calc((100% / 1) - 20px);
+    }
+    section{
+    background: url(https://initiate.alphacoders.com/images/115/cropped-2048-2732-1158838.jpg?2424) no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 120vw;
+    transition: all .5s;
+    }
+
+    .sidebar header{
+        display:none;
+    }
+
+    .sidebar {
+        position:fixed;
+        left: 0%;
+        right: 0%;
+        width: 1400px;
+        height: 2cm;
+        background: #4f0525;
+        transition: all .5s ease;
+      }
+        
+      label #btn,label #cancel{
+        display: none;
+      }
+    #caja1,
+    #caja2,
+    #caja3,
+    #caja4
+     {
+      width: calc((100% / 4) );
+      position:relative;
+    width: 15.9%;
+    height: 50px;
+    text-align: start;
+    
+        }
+        #caja5,
+        #caja6{
+            display: none;
+        }
+        .caja:hover{
+            padding-left: 50px;
+
+        }
+        #caja1::selection{
+            color:white
+        }
+        .caja :hover {
+            padding-left: 50px;
+        }
+
+}
+@media screen and (min-width:100px) and (max-width:490px){ 
+    .sidebar.cajas {
+        float: initial;
+        position: absolute;
+        width: calc(100% - 20px);
+     }
+     .sidebar{
+        position:absolute;
+        width: 5000px;
+        height: 12cm;
+        background: #ffffff;
+        transition: all .5s ease;
+     }
+    
+    
+           
+    
+}
