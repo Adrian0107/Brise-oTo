@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="PropiedadesFlex.css">
+    <title>Document</title>
+</head>
+<body>
+    <table>
+        <tr>
+            <td class="Titulo" colspan="3">Propiedades para el padre</td>
+        </tr>
+        <tr class="Titulo2">
+          <td>Propiedad</td>
+          <td>Descripción</td>
+          <td>Valores</td>
+        </tr>
+        <tr class="Dos">
+          <td>Display</td>
+          <td>Declarar un contenedor como flex</td>
+          <td>
+              <b class="flex">flex</p><span class="Tooltip">De bloque, ocupara todo el ancho del padre</span></b>
+              <b class="flex">inline-flex</p><span class="Tooltip2">De linea, el ancho lo define el contenido</span></b> 
+          </td>
+        </tr>
+        <tr class="Uno">
+            <td>flex-direction</td>
+            <td>Cambia la orientación del eje principal</td>
+            <td>
+                <b class="flex">row</p><span class="Tooltip3">Establece la dirección del eje principal en horizontal.</span></b>
+                <b class="flex">row-reverse</p><span class="Tooltip4">Establece la dirección del eje principal en horizontal (invertido).</span></b>
+                <b class="flex">column</p><span class="Tooltip5">Establece la dirección del eje principal en vertical.</span></b>
+                <b class="flex">column-reverse</p><span class="Tooltip6">Establece la dirección del eje principal en vertical (invertido).</span></b> 
+            </td>
+          </tr>
+          <tr class="Dos">
+            <td>flex-wrap</td>
+            <td>Evita o permite el desbordamiento (multilinea)</td>
+            <td>
+                <b class="flex">no-wrap</p><span class="Tooltip7">No permite que se desborde el contenedor.</span></b>
+                <b class="flex">wrap</p><span class="Tooltip8">Permite que se desborde el contenedor.</span></b>
+                <b class="flex">wrap-reverse</p><span class="Tooltip9">Permite desbordamiento, pero en dirección inversa.</span></b> 
+            </td>
+          </tr>
+          <tr class="Uno">
+            <td>flex-flow</td>
+            <td>Valor por defecto</td>
+            <td>
+                <b class="flex">row nowrap</p><span class="Tooltip10">Valor por defecto</span></b>
+            </td>
+          </tr>
+          <tr class="Dos">
+            <td>justify-content</td>
+            <td>Alineacion en el eje principal</td>
+            <td>
+                <b class="flex">flex-start</p><span class="Tooltip11">Agrupa los ítems al principio del eje principal.</span></b>
+                <b class="flex">flex-end</p><span class="Tooltip12">Agrupa los ítems al final del eje principal.</span></b>
+                <b class="flex">center</p><span class="Tooltip13">Agrupa los ítems al centro del eje principal.</span></b>
+                <b class="flex">space-between</p><span class="Tooltip14">Distribuye los ítems dejando el máximo espacio para separarlos.</span></b>
+                <b class="flex">space-evenly</p><span class="Tooltip15">Distribuye los ítems dejando el mismo espacio (solapado) a izquierda y derecha.</span></b>
+                <b class="flex">space-around</p><span class="Tooltip16">Distribuye los ítems dejando el mismo espacio alrededor de ellos (izq/dcha).</span></b> 
+            </td>
+          </tr>
+          <tr class="Uno">
+            <td>align-items</td>
+            <td>Acomoda los hijos en el eje transversal</td>
+            <td>
+                <b class="flex">stretch</p><span class="Tooltip17">Alinea los ítems estirándolos de modo que cubran desde el inicio hasta el final del contenedor.</span></b>
+                <b class="flex">flex-start</p><span class="Tooltip18">Alinea los ítems al principio del eje secundario.</span></b>
+                <b class="flex">flex-end</p><span class="Tooltip19">Alinea los ítems al final del eje secundario.</span></b>
+                <b class="flex">center</p><span class="Tooltip20">Alinea los ítems al centro del eje secundario.</span></b>
+                <b class="flex">baseline</p><span class="Tooltip21">Alinea los ítems en el contenedor según la base del contenido de los ítems del contenedor.</span></b> 
+            </td>
+          </tr>
+      </table>
+      <table>
+        <tr>
+            <td class="Titulo" colspan="3">Propiedades para el hijo</td>
+        </tr>
+        <tr class="Titulo2">
+          <td>Propiedad</td>
+          <td>Descripción</td>
+          <td>Valores</td>
+        </tr>
+        <tr class="Dos">
+          <td>order</td>
+          <td>Controla el orden en el que se desplegaran los hijos</td>
+          <td>
+              <b class="flex">0-n</p><span class="Tooltip22">El default es cero, el orden sera declarado en html</span></b>
+          </td>
+        </tr>
+        <tr class="Uno">
+            <td>flex-grow</td>
+            <td>Establece la habilidad del hijo para crecer</td>
+            <td>
+                <b class="flex">1-n</p><span class="Tooltip23">Por default todos son 1, n sera un valor de proporcional.</span></b>
+            </td>
+          </tr>
+          <tr class="Dos">
+            <td>flex-shrink</td>
+            <td>Establece la habilidad del hijo para encojerse</td>
+            <td>
+                <b class="flex">1-n</p><span class="Tooltip24">Por default todos son 1, n sera un valor de proporcional.</span></b>
+            </td>
+          </tr>
+          <tr class="Uno">
+            <td>flex-basis</td>
+            <td>Tamaño default para un elemento antes de que el espacio restante sea distribuido.Puede ser en porcentaje.</td>
+            <td>
+                <b class="flex">auto</p><span class="Tooltip25">De acuerdo a las propiedades width y height </span></b>
+                <b class="flex">content</p><span class="Tooltip26">De acuerdo al contenido</span></b>
+            </td>
+          </tr>
+          <tr class="Dos">
+            <td>flex</td>
+            <td>Abreviacion para flex-grow, flex-shrink y flex-basis</td>
+            <td>
+                <b class="flex"></p><span class="Tooltip27"></span></b>
+            </td>
+      </table>
+</body>
+</html>

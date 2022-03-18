@@ -1,0 +1,494 @@
+table {
+    border: #000000 1px solid;
+    padding-right: 800px;    
+    border-bottom: #000000 10px solid;
+  }
+
+
+td, th {
+    border: black 1px solid;
+    padding: 8px;
+    width: 20%;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+  }
+.Titulo, .Titulo2{
+    text-align: center;
+    background-image: radial-gradient(circle at 68.3% -18.3%, #f9ffff 0, #d9f7ff 25%, #b5def2 50%, #91c5e0 75%, #70b0d0 100%);
+}
+.Dos{
+    background-image: linear-gradient(190deg, #ffe3f3 0, #ffe3ee 3.57%, #ffe3e9 7.14%, #ffe3e4 10.71%, #ffe4df 14.29%, #ffe5db 17.86%,
+    #ffe6d7 21.43%, #ffe7d3 25%, #ffe8d1 28.57%, #ffeace 32.14%, #ffeccd 35.71%, #ffedcc 39.29%, #fdefcb 42.86%, #f7f0cc 46.43%,
+    #f2f2cd 50%, #ecf3cf 53.57%, #e7f5d1 57.14%, #e1f6d5 60.71%, #dbf7d8 64.29%, #d6f8dc 67.86%, #d1f9e1 71.43%, #cdfae6 75%,
+    #c9faeb 78.57%, #c5faf0 82.14%, #c3faf5 85.71%, #c1fafa 89.29%, #c0faff 92.86%, #c0f9ff 96.43%, #c2f9ff 100%);
+}
+.Uno{
+    background-image: radial-gradient(circle at 50% -20.71%, #ffe6cd 0, #ffe7ca 6.25%, #ffe9c9 12.5%, #ffebc8 18.75%, #fbecc8 25%,
+    #f6eec8 31.25%, #f1efc9 37.5%, #ebf1cb 43.75%, #e6f2cd 50%, #e1f3d0 56.25%, #dbf4d3 62.5%, #d6f5d7 68.75%, #d1f6db 75%,
+    #ccf7df 81.25%, #c8f8e4 87.5%, #c4f8e9 93.75%, #c1f8ee 100%);
+}
+.flex:hover{
+   background-color: #0000003e;
+}
+
+.flex:hover .Tooltip  {
+    display: inline;
+}
+.flex:hover .Tooltip2  {
+    display: inline;
+}
+.flex:hover .Tooltip3  {
+    display: inline;
+}
+.flex:hover .Tooltip4  {
+    display: inline;
+}
+.flex:hover .Tooltip5 {
+    display: inline;
+}
+.flex:hover .Tooltip6  {
+    display: inline;
+}
+.flex:hover .Tooltip7 {
+    display: inline;
+}
+.flex:hover .Tooltip8  {
+    display: inline;
+}
+.flex:hover .Tooltip9  {
+    display: inline;
+}
+.flex:hover .Tooltip10  {
+    display: inline;
+}
+.flex:hover .Tooltip11  {
+    display: inline;
+}
+.flex:hover .Tooltip12  {
+    display: inline;
+}
+.flex:hover .Tooltip13  {
+    display: inline;
+}
+.flex:hover .Tooltip14  {
+    display: inline;
+}
+.flex:hover .Tooltip15 {
+    display: inline;
+}
+.flex:hover .Tooltip16  {
+    display: inline;
+}
+.flex:hover .Tooltip17 {
+    display: inline;
+}
+.flex:hover .Tooltip18  {
+    display: inline;
+}
+.flex:hover .Tooltip19 {
+    display: inline;
+}
+.flex:hover .Tooltip20  {
+    display: inline;
+}
+.flex:hover .Tooltip21 {
+    display: inline;
+}
+.flex:hover .Tooltip22{
+    display: inline;
+}
+.flex:hover .Tooltip23{
+    display: inline;
+}
+.flex:hover .Tooltip24{
+    display: inline;
+}
+.flex:hover .Tooltip25{
+    display: inline;
+}
+.flex:hover .Tooltip26{
+    display: inline;
+}
+.flex:hover  .Tooltip27{
+    display: inline;
+}
+
+.Tooltip{
+    display: none;
+    position: absolute;
+    background: #000000;
+    line-height: 20px;
+    z-index: 500;
+    text-align: center;
+    color: #fff;
+    font-size: 14px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    left: 640px;
+    bottom: 643px;
+}
+.Tooltip2{
+    display: none;
+    position: absolute;
+    background: #000000;
+    line-height: 20px;
+    z-index: 500;
+    text-align: center;
+    color: #fff;
+    font-size: 14px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    left: 640px;
+    bottom: 610px;
+}
+.Tooltip3{
+    display: none;
+    position: absolute;
+    background: #000000;
+    line-height: 20px;
+    z-index: 500;
+    text-align: center;
+    color: #fff;
+    font-size: 14px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    left: 640px;
+    bottom: 559px;
+}
+.Tooltip4{
+    display: none;
+    position: absolute;
+    background: #000000;
+    line-height: 20px;
+    z-index: 500;
+    text-align: center;
+    color: #fff;
+    font-size: 14px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    left: 640px;
+    bottom: 526px;
+}
+.Tooltip5{
+    display: none;
+    position: absolute;
+    background: #000000;
+    line-height: 20px;
+    z-index: 500;
+    text-align: center;
+    color: #fff;
+    font-size: 14px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    left: 640px;
+    bottom: 490px;
+}
+.Tooltip6{
+    display: none;
+    position: absolute;
+    background: #000000;
+    line-height: 20px;
+    z-index: 500;
+    text-align: center;
+    color: #fff;
+    font-size: 14px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    left: 655px;
+    bottom: 457px;
+}
+.Tooltip7{
+    display: none;
+    position: absolute;
+    background: #000000;
+    line-height: 20px;
+    z-index: 500;
+    text-align: center;
+    color: #fff;
+    font-size: 14px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    left: 640px;
+    bottom: 405px;
+}
+.Tooltip8{
+    display: none;
+    position: absolute;
+    background: #000000;
+    line-height: 20px;
+    z-index: 500;
+    text-align: center;
+    color: #fff;
+    font-size: 14px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    left: 640px;
+    bottom: 370px;
+}
+.Tooltip9{
+    display: none;
+    position: absolute;
+    background: #000000;
+    line-height: 20px;
+    z-index: 500;
+    text-align: center;
+    color: #fff;
+    font-size: 14px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    left: 650px;
+    bottom: 338px;
+}
+.Tooltip10{
+    display: none;
+    position: absolute;
+    background: #000000;
+    line-height: 20px;
+    z-index: 500;
+    text-align: center;
+    color: #fff;
+    font-size: 14px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    left: 640px;
+    bottom: 285px;
+}
+.Tooltip11{
+    display: none;
+    position: absolute;
+    background: #000000;
+    line-height: 20px;
+    z-index: 500;
+    text-align: center;
+    color: #fff;
+    font-size: 14px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    left: 640px;
+    bottom: 232px;
+}
+.Tooltip12{
+    display: none;
+    position: absolute;
+    background: #000000;
+    line-height: 20px;
+    z-index: 500;
+    text-align: center;
+    color: #fff;
+    font-size: 14px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    left: 640px;
+    bottom: 200px;
+}
+.Tooltip13{
+    display: none;
+    position: absolute;
+    background: #000000;
+    line-height: 20px;
+    z-index: 500;
+    text-align: center;
+    color: #fff;
+    font-size: 14px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    left: 640px;
+    bottom: 165px;
+}
+.Tooltip14{
+    display: none;
+    position: absolute;
+    background: #000000;
+    line-height: 20px;
+    z-index: 500;
+    text-align: center;
+    color: #fff;
+    font-size: 14px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    left: 655px;
+    bottom: 130px;
+}
+.Tooltip15{
+    display: none;
+    position: absolute;
+    background: #000000;
+    line-height: 20px;
+    z-index: 500;
+    text-align: center;
+    color: #fff;
+    font-size: 14px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    left: 650px;
+    bottom: 99px;
+}
+.Tooltip16{
+    display: none;
+    position: absolute;
+    background: #000000;
+    line-height: 20px;
+    z-index: 500;
+    text-align: center;
+    color: #fff;
+    font-size: 14px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    left: 650px;
+    bottom: 62px;
+}
+.Tooltip17{
+    display: none;
+    position: absolute;
+    background: #000000;
+    line-height: 20px;
+    z-index: 500;
+    text-align: center;
+    color: #fff;
+    font-size: 14px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    left: 640px;
+    bottom: 10px;
+}
+.Tooltip18{
+    display: none;
+    position: absolute;
+    background: #000000;
+    line-height: 20px;
+    z-index: 500;
+    text-align: center;
+    color: #fff;
+    font-size: 14px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    left: 640px;
+    bottom: -22px;
+}
+.Tooltip19{
+    display: none;
+    position: absolute;
+    background: #000000;
+    line-height: 20px;
+    z-index: 500;
+    text-align: center;
+    color: #fff;
+    font-size: 14px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    left: 640px;
+    bottom: -57px;
+}
+.Tooltip20{
+    display: none;
+    position: absolute;
+    background: #000000;
+    line-height: 20px;
+    z-index: 500;
+    text-align: center;
+    color: #fff;
+    font-size: 14px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    left: 640px;
+    bottom: -89px;
+}
+.Tooltip21{
+    display: none;
+    position: absolute;
+    background: #000000;
+    line-height: 20px;
+    z-index: 500;
+    text-align: center;
+    color: #fff;
+    font-size: 14px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    left: 640px;
+    bottom: -125px;
+}
+.Tooltip22{
+    display: none;
+    position: absolute;
+    background: #000000;
+    line-height: 20px;
+    z-index: 500;
+    text-align: center;
+    color: #fff;
+    font-size: 14px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    left: 640px;
+    bottom: -265px;
+}
+.Tooltip23{
+    display: none;
+    position: absolute;
+    background: #000000;
+    line-height: 20px;
+    z-index: 500;
+    text-align: center;
+    color: #fff;
+    font-size: 14px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    left: 640px;
+    bottom: -320px;
+}
+.Tooltip24{
+    display: none;
+    position: absolute;
+    background: #000000;
+    line-height: 20px;
+    z-index: 500;
+    text-align: center;
+    color: #fff;
+    font-size: 14px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    left: 640px;
+    bottom: -375px;
+}
+.Tooltip25{
+    display: none;
+    position: absolute;
+    background: #000000;
+    line-height: 20px;
+    z-index: 500;
+    text-align: center;
+    color: #fff;
+    font-size: 14px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    left: 640px;
+    bottom: -440px;
+}
+.Tooltip26{
+    display: none;
+    position: absolute;
+    background: #000000;
+    line-height: 20px;
+    z-index: 500;
+    text-align: center;
+    color: #fff;
+    font-size: 14px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    left: 640px;
+    bottom: -473px;
+}
+.Tooltip27{
+    display: none;
+    position: absolute;
+    background: #000000;
+    line-height: 20px;
+    z-index: 500;
+    text-align: center;
+    color: #fff;
+    font-size: 14px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    left: 640px;
+    bottom: -125px;
+}
+
