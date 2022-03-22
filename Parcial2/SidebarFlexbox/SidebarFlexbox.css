@@ -1,0 +1,194 @@
+* {
+    box-sizing:border-box;
+    margin: 0;
+    padding: 0;
+}
+
+div.ContenedorFlex {
+    background: url(https://images7.alphacoders.com/115/1158838.jpg) no-repeat;
+    background-position: right;
+    background-size: cover;
+    
+    height:100vh;
+    transition: all .5s;
+    flex-grow:1;
+}
+
+.CajaFlex{
+    display:flex;
+    flex-direction:row;
+    width:100vw;
+    height:100vh;
+}
+
+div.Sidebar {
+    background-color: #4f0525;
+    width: 250px;
+}
+
+.imagen {
+    max-width: 800px;
+    padding-top: 50px;
+    padding-left: 50px;
+}
+.imagengrande{
+    max-width: 600px;
+    padding-top: 50px;
+    padding-left: 50px;
+}
+.imagenlarga{
+    max-width: 550px;
+    padding-top: 50px;
+    padding-left: 50px; 
+}
+.Titulo{
+    display: block;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+    color: rgb(250, 245, 245);
+    padding: 5px;
+    margin-bottom: 10px;
+    border: 10px solid #101326;
+    background-color: #101326;
+    font-size:20px;
+    align-self: center;
+}
+.Titulo:hover{
+    background-color: #101326;
+    border: 10px solid #101326;
+
+}
+.Titulo:active{
+    color: rgb(255, 255, 255);
+}
+
+p{
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+    color: rgb(17, 16, 16);
+    padding: 5px;
+    border: 10px solid #101326;
+    background-color: #e6e9ff;
+    font-size:20px;
+    width: 750px;
+    text-align: center;
+}
+  
+a {
+    display: block;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+    color: rgb(255, 255, 255);
+    padding: 5px;
+    border: 10px solid #101326;
+    background-color: #101326;
+    font-size:20px;
+    align-self: center;
+}
+  
+a:hover {
+    background-color: rgba(36, 96, 75, 0.966);
+    border: 10px solid rgba(36, 96, 75, 0.966);
+}
+
+a:active{
+    color: rgb(0, 0, 0);
+}
+
+.Sidebar2 { 
+    display: none; 
+}
+  
+#Inicio:target,
+#Musica:target,
+#Comprar:target,
+#Configuracion:target,
+#Preguntas:target { 
+    display: block;
+}
+
+input {
+    display: none;
+}
+  
+  
+@media screen and (max-width: 1200px) {
+   .CajaFlex{
+        flex-direction:column;
+    }
+    .Titulo{
+        display: none;
+    }
+    
+    div.Sidebar {
+        display: flex;
+        width: 100%;
+        justify-content:space-between;
+        background-color:#101326;
+    }
+    div.ContenedorFlex {
+        background: url(https://images7.alphacoders.com/115/1158838.jpg) no-repeat;
+        background-position: right;
+        background-size: cover;
+        transition: all .5s;
+        flex-grow:1;
+    }
+    .imagengrande{
+        max-width: 600px;
+        padding-top: 50px;
+        padding-left: 50px;
+    }
+    .imagenlarga{
+        max-width: 600px;
+        padding-top: 50px;
+        padding-left: 50px; 
+    }
+}
+  
+  
+  
+@media screen and (max-width: 700px) {
+    div.Sidebar {
+        width: 100%;
+        flex-direction: column;
+        text-align:center;
+        background-color:#101326;
+    }
+    .Titulo {
+        display: none;
+    }
+    div.ContenedorFlex {
+        background: url(https://images7.alphacoders.com/115/1158838.jpg) no-repeat;
+        background-position: right;
+        background-size: cover;
+        transition: all .5s;
+        flex-grow:1;
+    }
+    .imagen {
+        max-width:450px;
+        padding-top: 30px;
+        padding-left: 50px;
+    }
+    .imagengrande{
+        max-width: 400px;
+        padding-top: 50px;
+        padding-left: 50px;
+    }
+    .imagenlarga{
+        max-width: 350px;
+        padding-top: 50px;
+        padding-left: 50px; 
+    }
+    p{
+        text-decoration: none;
+        font-family: 'Roboto', sans-serif;
+        color: rgb(17, 16, 16);
+        padding: 5px;
+        border: 10px solid #101326;
+        background-color: #e6e9ff;
+        font-size:20px;
+        width: 500px;
+        text-align: center;
+    }
+    
+}
