@@ -1,0 +1,27 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.contenedor{
+    width: 100vw;
+    height: 100vh;
+    background-color: blue;
+
+    display: grid;
+    grid-template-columns: 33% 33% 34%;
+    grid-template-rows: 15% 70% 15%;
+    grid-template-areas: 'encabezado encabezado encabezado'
+                         'contenido1 contenido2 contenido3'
+                         'piepagina piepagina piepagina';
+}
+header { grid-area: encabezado; background-color: rgb(95, 95, 191);}
+#contenido1 { grid-area: contenido1; background-color: rgb(204, 70, 70);}
+#contenido2 { grid-area: contenido2; background-color: lawngreen;}
+#contenido3 { grid-area: contenido3; background-color: rgb(181, 128, 235);}
+footer { grid-area: piepagina; background-color: rgb(248, 60, 248);}
+
+ @media screen {
+     
+ }
