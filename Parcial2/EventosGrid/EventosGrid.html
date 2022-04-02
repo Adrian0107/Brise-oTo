@@ -19,15 +19,6 @@
         <div id="caja8"class="caja">Caja 8</div>
         <div id="caja9"class="caja">Caja 9</div>
     </div>
-    <script>
-       var elem=document.getElementById("idcontenedor");
-       elem.addEventListener("click",function(evento){
-           console.log(evento.target.id);
-
-           if(document.getElementById(evento.target.id).classList.contains("caja")){
-               document.getElementById(evento.target.id).classList.toggle("cajaAmarilla");
-            }
-       });
-    </script>
+<script src="EventosGrid.js" type="text/javascript"></script>
 </body>
 </html>
