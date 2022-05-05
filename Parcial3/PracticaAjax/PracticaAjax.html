@@ -17,7 +17,7 @@
     <form class="form">
 
       <div class="row">
-          <div class="col-sm-12 col-md-12 col-lg-12 text-center head">
+          <div id="divHeader" class="col-sm-12 col-md-12 col-lg-12 text-center head">
                 <h3 style="font-family:'Courier New', Courier, monospace;">Formulario para cita medica</h3>
           </div>
           <div class="form-group col-sm-12 col-md-6 col-lg-12">
@@ -86,6 +86,7 @@
       <button id="BotonSweet" class="btn btn-primary" type="button" class="btn">Boton Sweet</button>
       <button type="reset" class="btn btn-warning">Borrar formulario</button>
       <button id="BotonJS" type="button" class="btn btn-primary" > Boton JS</button>
+      <button id="btnAjax" type="button" class="btn btn-primary" > Boton Ajax</button>
 
       <div style="display: none;" id="Alertajeje" class="alert alert-primary" role="alert">
             Alerta exitosamente
@@ -137,6 +138,16 @@
                         icon: "success",
                   });
             });
+            $('#btnAjax').click(function(){
+                  var solicitud = new XMLHttpRequest ();
+                  solicitud.onreadystatechange = function()
+                  {
+                        if(solicitud.readyState == 4 && solicitud.status == 200){
+                              document.getElementById("divHeader").innerHTML = solicitud.responseText;
+                        }};
+                        solicitud.open("GET", "archivo.txt", true);
+                        solicitud.send();
+                  });
             }); 
             
       </script>
