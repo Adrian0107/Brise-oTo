@@ -11,10 +11,11 @@
       <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.3/dist/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
       <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+      <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
       <script src="Final.js"></script>
       
 </head>
-<body style="background-color: rgb(241, 172, 172);">
+<body style="background-color: rgb(155, 171, 172);">
     <div class="container">
     <form class="form">
 
@@ -22,11 +23,13 @@
           <div id="divHeader" class="col-sm-12 col-md-12 col-lg-12 text-center head">
                 <h3 style="font-family:'Courier New', Courier, monospace;">Formulario para cita medica</h3>
           </div>
+          <fieldset = disabled>
+            <div class="form-group col-sm-12 col-md-12 col-lg-12">
+                  <label for="IDID">ID</label>
+                  <input id="IDID" type="text" class="form-control" placeholder="ID"/>
+                </div>
+          </fieldset>
           <div class="form-group col-sm-12 col-md-12 col-lg-12">
-            <label for="IDID">ID</label>
-            <input id="IDID" type="text" class="form-control" placeholder="ID"/>
-          </div>
-          <div class="form-group col-sm-12 col-md-6 col-lg-12">
                 <label for="idFecha">Dia de la cita</label>
                 <input id="idFecha" type="text" class="form-control" name="trip-start" placeholder="2022-04-30"/>
           </div>
@@ -87,9 +90,13 @@
                   <input id="estado" type="text" class="form-control" placeholder="Nombre del Estado"/>
             </div>
       </div>
-      <button id="btnIngresar" type="button" class="btn btn-primary" data-toggle="modal" data-target="#EjemploModal">Ingresar</button>
+      <button id="btnIngresar" type="button" class="btn btn-success" data-toggle="modal" data-target="#EjemploModal">Ingresar</button>
       <button id="btnConsultar" class="btn btn-primary" type="button" class="btn">Consultar</button>
-      <button type="button" id="btnBorrar" class="btn btn-warning">Borrar</button>
+      <button type="reset" value="Borrar" class="btn btn-primary">Limpiar</button>
+      <button id="btnModificar" class="btn btn-warning" type="button" class="btn">Modificar</button>
+      <button type="button" id="btnBorrar" class="btn btn-danger">Borrar</button>
+      <button type="button" id="btnHolaaa" class="btn btn-danger">Swet</button>
+    
 
 
       <div style="display: none;" id="Alertajeje" class="alert alert-primary" role="alert">

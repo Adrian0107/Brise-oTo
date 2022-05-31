@@ -1,4 +1,5 @@
 <?php
+$ID=$_POST['Mid'];
 $Fecha=$_POST['Fe'];
 $Hora=$_POST['Ho'];
 $Nombre=$_POST['Nom'];
@@ -26,8 +27,8 @@ try{
 
 //$con->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 try{
-    $consultaSql = "Insert into cita (Fecha, Hora, Nombre, Apellido_Paterno, Apellido_Materno, Direccion, Colonia, Codigo_Postal, Email, Telefono, Ciudad, Estado)
-                    VALUES ('$Fecha','$Hora','$Nombre','$Paterno','$Materno','$Direccion','$Colonia','$Codigo','$Email','$Telefono','$Ciudad','$Estado')" ;
+    $consultaSql = "Update cita set Fecha='$Fecha',Hora='$Hora',Nombre='$Nombre',Apellido_Paterno='$Paterno',Apellido_Materno='$Materno',
+    Direccion='$Direccion',Colonia='$Colonia',Codigo_Postal='$Codigo',Email='$Email',Telefono='$Telefono',Ciudad='$Ciudad',Estado='$Estado' WHERE ID like $ID" ;
     $consulta = $con -> prepare($consultaSql);
     $consulta -> execute();
     $consulta->closeCursor();
