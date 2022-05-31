@@ -15,14 +15,12 @@ try{
 
 //$con->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 try{
-    $consultaSql = "select * from cita where id =".$paridCte;
+    $consultaSql = "Delete from cita where id =".$paridCte;
     $consulta = $con -> prepare($consultaSql);
     $consulta -> execute();
-    $resultado = $consulta->fetch(PDO::FETCH_ASSOC);
     $consulta->closeCursor();
 } catch (PDOException $e){
     echo "Error de consulta a la base de datos";
     echo $e->getMessage();
 }
-echo json_encode($resultado);
 ?>
