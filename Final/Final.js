@@ -8,9 +8,25 @@ $(document).ready(function() {
       });
 
       $('#btnBorrar').click(function() {
-            let varid =prompt('Ingrese el ID del registro a eliminar');
-            $.post('./php/Borrar.php',{par1:varid});
-            
+      let varid = $('#IDID').val();
+           Swal.fire({
+            title: 'Estas seguro?',
+            text: "Esto no se puede revertir",
+            icon: 'warning',
+            showCancelButton: true,
+            confirmButtonColor: '#3085d6',
+            cancelButtonColor: '#d33',
+            confirmButtonText: 'Eliminar'
+          }).then((result) => {
+            if (result.isConfirmed) {
+              Swal.fire(
+                'Eliminado!',
+                'El registro ha sido eliminado',
+                'success'
+              )
+              $.post('./php/Borrar.php',{par1:varid});
+            }
+      })    
       });
 
       $('#btnIngresar').click(function() {
@@ -43,7 +59,25 @@ $(document).ready(function() {
             let Telefono = $('#telPaciente').val();
             let Ciudad = $('#ciudad').val();
             let Estado = $('#estado').val();
-            $.post('./php/Editar.php',{Mid:ID,Fe:Fecha,Ho:Hora,Nom:Nombre,Pat:Apellido_Paterno,Mat:Apellido_Paterno,Dir:Direccion,Col:Colonia,Cod:Codigo_Postal,Em:Email,Tel:Telefono,Ciu:Ciudad,Est:Estado});
+
+            Swal.fire({
+                  title: 'Estas seguro de aplicar los cambios?',
+                  text: "Esto no se puede revertir",
+                  icon: 'warning',
+                  showCancelButton: true,
+                  confirmButtonColor: '#3085d6',
+                  cancelButtonColor: '#d33',
+                  confirmButtonText: 'Aplicar'
+                }).then((result) => {
+                  if (result.isConfirmed) {
+                    Swal.fire(
+                      'Cambios aplicados!',
+                      'Los cambios al registro han sido guardados',
+                      'success'
+                    )
+                    $.post('./php/Editar.php',{Mid:ID,Fe:Fecha,Ho:Hora,Nom:Nombre,Pat:Apellido_Paterno,Mat:Apellido_Paterno,Dir:Direccion,Col:Colonia,Cod:Codigo_Postal,Em:Email,Tel:Telefono,Ciu:Ciudad,Est:Estado});
+                  }
+            })
        });
       
       function refrescar(objeto){ 
@@ -65,22 +99,22 @@ $(document).ready(function() {
 
       $("#btnHolaaa").click(function(){
             Swal.fire({
-                  title: 'Estas seguro?',
+                  title: 'Estas seguro de aplicar los cambios?',
                   text: "Esto no se puede revertir",
                   icon: 'warning',
                   showCancelButton: true,
                   confirmButtonColor: '#3085d6',
                   cancelButtonColor: '#d33',
-                  confirmButtonText: 'Eliminar'
+                  confirmButtonText: 'Aplicar'
                 }).then((result) => {
                   if (result.isConfirmed) {
                     Swal.fire(
-                      'Eliminado!',
-                      'El registro ha sido eliminado',
+                      'Cambios aplicados!',
+                      'Los cambios al registro han sido guardados',
                       'success'
                     )
                   }
-                })
+            })
       });
        
 });
